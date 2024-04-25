@@ -1,0 +1,15 @@
+[package]
+name = "vigenere-hasher"
+version = "0.1.0"
+edition = "2021"
+license = "LGPL-3.0-or-later"
+categories = ["no-std", "algorithms"]
+
+[lints.clippy]
+cargo = "warn"
+pedantic = "warn"
+unwrap_used = "deny"
+large_include_file = "forbid"
+
+[lints.rust]
+unsafe_code = "forbid"
