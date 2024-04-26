@@ -56,7 +56,7 @@ impl<'a> Default for Hasher<'a, u8> {
 impl<'a, T> Iterator for Hasher<'a, T> {
 	type Item = T;
 	fn next(&mut self) -> Option<Self::Item> {
-		None
+		todo!();
 	}
 }
 
