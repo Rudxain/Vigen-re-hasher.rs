@@ -47,6 +47,7 @@ impl<'a, T> Hasher<'a, T> {
 /*
 impl<'a> Default for Hasher<'a, u8> {
 	fn default() -> Self {
+ 		// to-do: use static CoW
 		let mut iv = [0u8; 8];
 		Self::new(0, &mut iv)
 	}
