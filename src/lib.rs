@@ -5,8 +5,11 @@
 ///
 /// `op(&sbox[i], inp[i])`.
 /// `op` can be any `fn` that acts like a binary operator.
-/// in the future, it may be required to be commutative,
+/// In the future, it may be required to be commutative,
 /// allowing argument/operand order to be implementation-defined.
+///
+/// It's recommended for `op` to be associative,
+/// for performance.
 pub fn hasher_single<'a, T, I, F>(inp: I, sbox: &mut [T], op: F)
 where
 	T: 'a,
